@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #1D1B32;
+  }
+  
+  .main {
+    text-align: center; 
+    color: white;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 10px;
+  }
+  #searchInput {
+      padding: 12px;
+      font-size: 16px;
+      cursor:auto;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      width: 70%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    #searchInput::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    
+    #searchInput:hover,
+    #searchInput:focus {
+       background-color: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); 
+    }
+
+    
+  
+  #design{
+      width: 100%;
+  }
+  
+  .main img{
+      width: 100vw;
+      
+  }
+  .main p{
+      /* text-align: center; */
+      /* width: 70%; */
+      /* margin: auto; */
+      font-size: x-large;
+      margin: 0px;
+      margin-bottom: 10px;
+  
+  }
+  
+  #tasty-hub {
+    font-size: 62px;
+    font-weight: bold;
+  }
+  
+  #text {
+    margin: 20px 0;
+    color: white;
+  }
+  
+  #searchInput {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #backButton {
+    padding: 8px 16px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  hr{
+      width: 40%;
+      height: 3px;
+      background-color: white;
+      margin: auto;
+  }
+  
+  #backButton{
+      border-radius: 5px;
+      margin-top: 10px;
+      background-color: #77EBC8;
+      color: #1D1B32;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+  }
+  
+  #mealContainer {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* height: 500px; */
+    /* border: 3px solid white; */
+  }
+  
+  #mealContainers {
+    text-align: center;
+    color: white;
+    width: 80%;
+    height: 90vh;
+    overflow: scroll;
+    margin: auto;
+    display: none;
+    z-index: 10;
+    border: 1px solid white;
+  }
+  #mealContainers img{
+      height: 400px;    
+      width: 400px;    
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+  }
+  #mealContainers1{
+    position: fixed;
+    top: 0;
+    display: none;
+  }
+  #mealContainers::-webkit-scrollbar {
+      display: none;
+    }
+    
+    
+    #mealContainers {
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
+    }
+    
+    #mealContainers:hover::-webkit-scrollbar {
+      display: none;
+    }
+  
+  #mealContainers p{
+      width: auto;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .dish img{
+     width: 20%; height: 20%; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%;
+}
+  .card img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 10px;
+  }
+  .dish {
+    border: 3px solid white;
+    width: 50%;
+    margin-left: 50%;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    border: 3px solid white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  
+  .cook-btn {
+      padding: 8px 20px;
+      background-color: #fcb7ce; /* Green */
+      color: #1D1B32;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      /* transition: background-color 0.3s ease-in-out; */
+    }
+  
+    @media only screen and (max-width: 400px) {
+        #searchInput {
+            width: 100%;
+        }
+    
+        .main {
+            width: 95%;
+        }
+    
+        #mealContainers {
+            width: 95%;
+        }
+    
+        .card {
+            width: 80%;
+            height: 150px;
+        }
+    
+        .dish,
+        .card img {
+            width: 25%;
+            height: auto;
+        }
+        .dish p{
+            font-size: 10px;
+        }
+    }
